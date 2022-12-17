@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&family=Roboto+Mono:wght@300&display=swap');
+body {
+    line-height: 1.5em;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    margin:0;
+    background: #222;
+    height:100vh;
+    font-family: 'Open Sans', sans-serif;
+    background-image: url("pexels-roberto-nickson-2775196.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+.card{
+    color: white;
+    padding: 2em;
+    width: 100%;
+    min-width: 29.375rem;
+    max-width: 19.25rem;
+    background: #000000d0;
+    border-radius: 30px;
+    margin: 1em;
+}
+.search{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+button{
+    margin:0.5rem;
+    border-radius:50px;
+    border:none;
+    outline: none;
+    height:42px;
+    width:42px;
+    background: #7c7c7c2b;
+    cursor: pointer;
+    transition:0.2s ease-in-out;
+}
+button:hover{
+   padding-right:2px;
+}
+input.search-bar{
+    background: #7c7c7c2b;
+    border:none;
+    outline:none;
+    padding :0.5em 1em;
+    border-radius:25px;
+    color:white;
+    font-family:inherit;
+    font-size:110%;
+    width:calc(100%-60px);
+}
+.temp{
+    margin:0;
+}
+.flex{
+    display: flex;
+    align-items: center;
+}
+/*for mobiles*/
+@media(max-width: 768px){
+    .card{
+        color:white;
+        padding: 2em;
+        width: 100%;
+        min-width: 29.375rem;
+        max-width: 19.25rem;
+        background: #000000d0;
+        border-radius: 30px;
+        margin: 1em;
+       
+    }
+    .description,.humidity,.wind-speed{
+        font-size: 1.5em;
+        padding-bottom: 0.2em;
+}
+}
+/*for mobile*/
+@media(max-width: 468px){
+    .card{
+       
+        min-width: 19.375rem;
+            padding-right: 4em;
+       
+    }  
+    .description,.humidity,.wind-speed{
+        font-size: 1.5em;
+        padding-bottom: 0.2em;
+
+    }
+}
